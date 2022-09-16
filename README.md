@@ -44,3 +44,24 @@ Para instalar o Flex primeiramente abra o terminal e digite o comando **sudo apt
 <img src="imagens/img1.png" alt="img1"/>
 
 Após isso as dependências serão instaladas e o Flex estará pronto para uso.
+
+### Preparação do código
+O Flex utiliza arquivos com a extensão **.l** para compilar os analisadores léxicos. Esse tipo de arquivo utiliza recursos de linguagem C, porém tem uma estrutura particular que consiste em três divisões, cada uma delas com suas propriedades para a estrutura do código. A primeira parte é composta de definições, que é onde serão colocados os headers da linguagem C e o alfabeto do analisador léxico. A segunda parte é formada pelas regras da gramática que será especificada pelo desenvolvedor. A terceira parte será formada pelas subrotinas do programa em C (simplificando, aqui será colocada a main() do programa). Essas partes são divididas pelo símbolo "%%" dentro do código. O Flex irá utilizar esse arquivo .l para montar um arquivo **.c** que será o analisador léxico em linguagem C. A Figura abaixo mostra um exemplo de programa Flex. As funções **yywrap()** (linha 21) e **yylex()** (linha 23) são necessárias para a utilização do Flex.
+
+<img src="imagens/img2.png" alt="img2"/>
+
+O analisador léxico da linguagem regular proposta nesse trabalho está implementado no arquivo **fonte.l**. Também foi utilizado um arquivo **entrada.txt** que contém a entrada para o analisador léxico.
+
+<img src="imagens/img3.png" alt="img3"/>
+
+### Compilação do código
+Para compilar o código e começar a utilizar o analisador léxico são necessários três passos:
+1. Compilar o arquivo .l:
+
+Para compilar o arquivo .l abra o terminal e vá até o diretório que contém o arquivo e utilize o comando **flex** seguido do **<nome do arquivo>.l**. Ao termino da compilação será gerado um arquivo .c no mesmo diretório. Nesse exemplo o comando executado será flex fonte.l.
+ 
+ <img src="imagens/img4.png" alt="img4"/>
+ 
+ 2. Compilar o arquivo .c:
+ 
+Após compilar o arquivo .l, no mesmo diretório estará o arquivo **lex.yy.c**, onde utilizaremos o compilador GCC. Para compilar esse código em linguagem C será utilizado o comando **gcc <nome do arquivo>.c -o <nome do arquivo de saída>**, que nesse caso será **gcc lex.yy.c -o comp**, assim gerando o arquivo **comp** que será o executável com o nosso analisador lexico.
