@@ -1,0 +1,30 @@
+﻿#include <stdio.h>
+
+#include <stdlib.h>
+
+
+
+int main (){
+	
+	int x = 0, i, 123VarErrada; //Variáveis não podem começar com numeros
+	
+		
+	for(i = 0; i<10; i++)}
+
+		x++;
+		
+		x+=1;
+	
+		x =- 2;; //O operador correto seria -= e não =-
+
+	}
+
+	
+
+	printf("O valor de x eh %d", x)
+
+	
+	return @; //@ não faz parte da linguagem
+
+
+}}}}}}} //Não vê nenhum erro, já que } faz parte da linguagem, não importando o número de vezes que apareça
