@@ -1,4 +1,4 @@
-# Analisador Léxico de linguagem C
+# Analisador léxico de linguagem C
 Implementação de um analisador léxico utilizando Flex para analisar uma linguagem C.
 
 ## O que é um analisador léxico?
@@ -30,3 +30,13 @@ Cadeias de caracteres começadas com letras (a, ..., z, A, ..., Z) e seguidas de
 3. Qualquer caractere fora do alfabeto.
 
 OBS: Após o analisador encontrar o símbolo "//" todos os caracteres posteriores naquela linha serão ignorados, pois serão considerados um comentário.
+
+## Criando um analisador léxico com Flex
+### Preparando o ambiente
+O Flex é um framework que auxilia na criação de analisadores léxicos, e para ter acesso a suas bibliotecas é necessário instalar as dependências.
+
+Pré-requisitos:
+- Sistema operacional Linux: Ubuntu;
+- Compilador C: GNU Compiler Collection (GCC).
+
+Para instalar o Flex primeiramente abra o terminal e digite o comando **sudo apt-get install flex**. Após isso as dependências serão instaladas e o Flex estará pronto para uso.
