@@ -4,9 +4,9 @@ Implementação de um analisador léxico utilizando Flex para analisar uma lingu
 ## O que é um analisador léxico?
  Um analisador léxico, ou scanner, é um programa que implementa um autômato finito, reconhecendo (ou não) strings como símbolos válidos de uma linguagem. A implementação de um analisador léxico requer uma descrição do autômato que reconhece as sentenças da gramática ou expressão regular de interesse. A sentença a ser reconhecida é estruturada como uma lista de símbolos, que é passada como argumento para o analisador léxico juntamente com a referência para o autômato.
   
- Em linguagens de programação é o analisador léxico que analisa o código fonte para verificar se todas as sentenças fazem parte da linguagem e, para isso, transforma as strings em tokens. Um Token em computação é um segmento de texto ou símbolo que pode ser manipulado por um analisador sintático, que fornece um significado ao texto, ou seja, é um conjunto de caracteres com um significado coletivo. Esses tokens são passados para o analisador sintático, que irá verificar se a estrutura gramatical do código está correta.
+ Em linguagens de programação é o analisador léxico que analisa o código fonte para verificar se todas as sentenças fazem parte da linguagem e, para isso, transforma as strings em _tokens_. Um _Token_ em computação é um segmento de texto ou símbolo que pode ser manipulado por um analisador sintático, que fornece um significado ao texto, ou seja, é um conjunto de caracteres com um significado coletivo. Esses _tokens_ são passados para o analisador sintático, que irá verificar se a estrutura gramatical do código está correta.
   
- Analisadores léxicos podem ser implementados em linguagens de programação para reconhecer e verificar uma sequência de strings e gerar os tokens. Devido à complexidade de implementação de um analisador existem geradores automáticos que facilitam o trabalho de criar um desses para sua linguagem regular. Nesse trabalho será utilizado o Flex (fast lexical analyzer generator), que a partir das regras de gramática impostas gera automaticamente um analisador léxico em linguagem C.
+ Analisadores léxicos podem ser implementados em linguagens de programação para reconhecer e verificar uma sequência de strings e gerar os _tokens_. Devido à complexidade de implementação de um analisador existem geradores automáticos que facilitam o trabalho de criar um desses para sua linguagem regular. Nesse trabalho será utilizado o Flex (_fast lexical analyzer generator_), que a partir das regras de gramática impostas gera automaticamente um analisador léxico em linguagem C.
 
 ## Construindo uma linguagem regular
  As descrições da linguagem regular irão definir as regras e os símbolos aceitos na nossa linguagem. Definir o alfabeto e as expressões regulares da sua linguagem é o ponto mais importante da criação de um analisador léxico. Para esse trabalho foi tomada como referência a linguagem de programação C.
@@ -41,6 +41,6 @@ Pré-requisitos:
 
 Para instalar o Flex primeiramente abra o terminal e digite o comando **sudo apt-get install flex**. 
 
-<img src="imagens/banner_boas_vindas.png" alt="My cool logo"/>
+<img src="imagens/img1.png" alt="img1"/>
 
 Após isso as dependências serão instaladas e o Flex estará pronto para uso.
