@@ -39,4 +39,8 @@ Pré-requisitos:
 - Sistema operacional Linux: Ubuntu;
 - Compilador C: GNU Compiler Collection (GCC).
 
-Para instalar o Flex primeiramente abra o terminal e digite o comando **sudo apt-get install flex**. Após isso as dependências serão instaladas e o Flex estará pronto para uso.
+Para instalar o Flex primeiramente abra o terminal e digite o comando **sudo apt-get install flex**. 
+
+<img src="imagens/banner_boas_vindas.png" alt="My cool logo"/>
+
+Após isso as dependências serão instaladas e o Flex estará pronto para uso.
