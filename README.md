@@ -65,3 +65,14 @@ Para compilar o arquivo .l abra o terminal e vá até o diretório que contém o
  2. Compilar o arquivo .c:
  
 Após compilar o arquivo .l, no mesmo diretório estará o arquivo **lex.yy.c**, onde utilizaremos o compilador GCC. Para compilar esse código em linguagem C será utilizado o comando **gcc <nome do arquivo>.c -o <nome do arquivo de saída>**, que nesse caso será **gcc lex.yy.c -o comp**, assim gerando o arquivo **comp** que será o executável com o nosso analisador lexico.
+
+<img src="imagens/img5.png" alt="img5"/>
+ 
+ 3. Executar o analisador léxico:
+ 
+Para executar o analisador léxico agora é somente necessário iniciar o executável atravez do comando **./<nome do arquivo executável>**, que para este exemplo será **./comp**. Também é possível executar o analisador dando como entrada um arquivo .txt com as strings que serão analisadas utilizando o comando **./<nome do arquivo executável> < <nome do arquivo de entrada>.txt**, então ao final, para este exemplo, utilizando o arquivo de entrada **entrada.txt** temos o comando de execução **./comp < entrada.txt**.
+
+<img src="imagens/img6.png" alt="img6"/>
+ 
+ ## Conclusões
+O Flex é um framework que facilita o desenvolvimento de analisadores léxicos em linguagem C. Com ele foi possível desenvolver um projeto que analisa os erros léxicos de uma linguagem regular e retorna esses erros para o usuário. Com poucas linhas de código um poderoso analisador léxico pode ser construído para qualquer linguagem regular e gramática informada pelo desenvolvedor.
